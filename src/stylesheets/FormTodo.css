@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.todo-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+
+
+.todo-input{
+    width: 385px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    margin: 5px;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    background: rgba( 8, 167, 240, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    outline: none;
+}
+
+.todo-button{
+    padding: 16px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: rgba( 8, 167, 240, 0.35 );
+    background: rgba( 8, 167, 240, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    text-transform: capitalize;
+}
