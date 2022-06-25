@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Teko:wght@700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,9 +9,12 @@
 
 html, body{
   color: white;
-  background-color: #1b1b32;
+  /*background-color: #1b1b32;*/
+  /*background: rgb(2,0,36);*/
+  background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 66%, rgba(255,226,0,1) 100%);
   font-family: Lato,sans-serif;
   font-size: 40px;
+  min-height: 110vh;
 
 }
 
@@ -22,13 +27,47 @@ html, body{
 
 }
 
-.freecodecamp-logo-container{
+.todo-list-title{
   width: 100%;
   height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 80px;
+  color: gold;
+  text-shadow: -7px 6px 7px rgba(0,0,0,0.55);
 
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: tracking-in-expand 0.3s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -42,11 +81,19 @@ html, body{
 .main-todo-list{
   width: 600px;  
   min-height: 500px;
-  background-color: #d0d0d5;
+  /* background-color: #d0d0d5; */
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 25px;
   margin: 10px;
   align-items: center;
   border-radius: 26px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: large;
 }
 
 h1{
@@ -55,4 +102,11 @@ h1{
   font-family: Roboto, sans-serif;
   text-align: center;
   margin: 20px 0;
+}
+
+.footer{
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
